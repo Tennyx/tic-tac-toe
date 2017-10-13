@@ -1,0 +1,30 @@
+{% extends "../home/base.html" %}
+{% block title %}
+Tic-Tac-Toe
+{% endblock %}
+
+{% block header %}
+<script src="/static/js/ticTacToe.js"></script>
+<link rel="stylesheet" href="/static/css/tic-tac-toe.css">
+{% endblock %}
+
+{% block content %}
+<div id="placeholder">
+  <div class="text-center" id="open">
+    <h5 id="question">Would you like to...play a game? (Of Tic-Tac-Toe)</h5>
+    <button id="oneplayer" class="btn btn-info">One Player Game</button>
+    <button id="twoplayer" class="btn btn-info">Two Player Game</button>
+  </div>
+</div>
+
+<div id="overholder"></div>
+
+<table id="tab"></table>
+
+<div id="player" class="text-center"></div>
+
+<div class="text-center">
+	<a href="#"><i class="fa fa-github fontlink-light" aria-hidden="true"></i></a>
+	<p class="text-center description">This project was written in jQuery. Click for github code.</p>
+</div>
+{% endblock %}
